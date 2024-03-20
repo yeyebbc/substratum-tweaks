@@ -42,7 +42,8 @@ keystoreProperties.load(FileInputStream(keystorePropertiesFile))
 
 
 android {
-    compileSdk=31
+    compileSdk=34
+    android.buildFeatures.buildConfig = true
 
     defaultConfig {
         // If you're planning to change up the package name, ensure you have read the readme
@@ -52,8 +53,8 @@ android {
         // to the substratum repo rather than anything lower. Keep targetSdkVersion the same.
         minSdk=28
         // Both versions must be changed to increment on Play Store/user's devices
-        versionCode = 120
-        versionName = "1.2.0"
+        versionCode = 121
+        versionName = "1.2.1"
         //buildToolsVersion = "30.0.2"
 
         // Themers: DO NOT MODIFY

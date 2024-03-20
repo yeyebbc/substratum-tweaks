@@ -9,7 +9,7 @@ buildscript {
     }
 
     dependencies {
-        classpath("com.android.tools.build:gradle:7.3.0")
+        classpath("com.android.tools.build:gradle:8.3.1")
         classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:1.6.21")
     }
 }
@@ -30,7 +30,7 @@ allprojects {
 }
 
 tasks.register<Delete>("clean") {
-    delete(rootProject.buildDir)
+    delete(project.layout.buildDirectory)
     val tempAssets = File(projectDir, "/src/main/assets-temp")
     if (tempAssets.exists()) {
         println("cleaning encrypted assets...")

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="task_corner_radius">6dp</dimen>
+
+    <!-- For screens without rounded corners -->
+    <dimen name="task_corner_radius_small">6dp</dimen>
+</resources>
